@@ -164,6 +164,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         if (value.length < 6) {
                           return 'Мінімум 6 символів';
                         }
+                        if (!RegExp(r'[A-ZА-ЯІЇЄҐ]').hasMatch(value)) {
+                          return 'Додайте хоча б одну велику літеру';
+                        }
+                        if (!RegExp(r'[!@#$%^&*(),.?":{}|<>_\-+=\[\]\\\/~`]').hasMatch(value)) {
+                          return 'Додайте хоча б один спеціальний знак (!@#\$%^&* тощо)';
+                        }
                         return null;
                       },
                     ),
