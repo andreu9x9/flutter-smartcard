@@ -1,4 +1,4 @@
-# cursorva
+# SmartCard
 
 A new Flutter project.
 
