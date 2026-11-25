@@ -1,5 +1,5 @@
-name: smart_cart
-description: "Застосунок для формування списку покупок на SQLite."
+name: smartcart
+description: "Застосунок для формування списку покупок."
 publish_to: 'none'
 version: 1.0.0+1
 
